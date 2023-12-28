@@ -3,18 +3,25 @@
 *{
     background-color: dodgerblue;
 }
+html,body{
+    height: 100%;
+    width: 100%;
+}
 header{
     font-family: 'Fredoka', sans-serif;
     color: #FAB201;
     font-size: 100px;
     text-align: center;
-    padding-top: 100px;
     -webkit-text-stroke: 10px white;
 }
 
 .game{
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
 }
 .box{
     height: 100px;
@@ -30,13 +37,15 @@ header{
     display: grid;
     grid-template-columns: 110px 110px 110px;
     grid-template-rows: 110px 110px 110px;
-    padding-left: 700px;
-    padding-top: 160px;
+   
 }
 footer{
+    /* height: 100%;
+    width: 100%; */
     font-family: 'Fredoka', sans-serif;
     color: white;
     font-size: 30px;
-    margin-top: 290px;
-    margin-left: 580px;
+    position: absolute;
+    top: 80%;
+    left: 38%;
 }
